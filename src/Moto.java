@@ -11,7 +11,7 @@ public class Moto extends Vehiculo implements IVehiculo{
     }
     @Override
     public void fabricarVehiculo(Vehiculo v) {
-        v.setCombustible("Combustible");
+        v.setCombustible("Gasolina");
         v.setColor("Negro");
         v.setDimensiones("2x1.7");
         v.setMatricula(matriculaVehiculo(v));
@@ -25,7 +25,7 @@ public class Moto extends Vehiculo implements IVehiculo{
 
     @Override
     public void montajeVehiculo(Vehiculo v) {
-        System.out.println("Moto montada y creada!");
+        System.out.println("Moto montada de tipo: " + Tipo.CUSTOM.toString());
     }
 
     @Override
