@@ -1,7 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello Holaaa!");
-        System.out.println("Seguimos probando");
-        System.out.println("Probando Rafa");
+        Vehiculo v = new Vehiculo();
+        Autobus pacopepe = new Autobus();
+        pacopepe.matriculaVehiculo(v);
+        pacopepe.fabricarVehiculo(v);
+        pacopepe.montajeVehiculo(v);
+
+        
     }
 }

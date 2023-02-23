@@ -32,4 +32,16 @@ public class Automovil extends Vehiculo implements IVehiculo {
     public String matriculaVehiculo(Vehiculo v) {
         return new generarMatricula().toString();
     }
+
+    @Override
+    public int acelerarVehiculo(int velocidad) {
+        velocidad+=10;
+        return velocidad;
+    }
+
+    @Override
+    public int frenarVehiculo(int velocidad) {
+        velocidad-=10;
+        return velocidad;
+    }
 }

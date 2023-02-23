@@ -27,11 +27,13 @@ public class Autobus extends Vehiculo implements IVehiculo{
 
     @Override
     public int acelerarVehiculo(int velocidad) {
-
+        velocidad += 5;
+        return velocidad;
     }
 
     @Override
     public int frenarVehiculo(int velocidad) {
-        return 0;
+        velocidad-=5;
+        return velocidad;
     }
 }
