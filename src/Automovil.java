@@ -24,4 +24,20 @@ public class Automovil extends Vehiculo implements IVehiculo {
     public String matriculaVehiculo(Vehiculo v) {
         return new generarMatricula().toString();
     }
+
+    public boolean isMaletero() {
+        return maletero;
+    }
+
+    public void setMaletero(boolean maletero) {
+        this.maletero = maletero;
+    }
+
+    public boolean isCinturon() {
+        return cinturon;
+    }
+
+    public void setCinturon(boolean cinturon) {
+        this.cinturon = cinturon;
+    }
 }

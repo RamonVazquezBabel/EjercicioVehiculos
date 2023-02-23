@@ -20,7 +20,6 @@ public class Moto extends Vehiculo implements IVehiculo{
         v.setPrecio(75000);
         v.setTipoCambio("Marchas");
         v.setTipoDireccion("Normal");
-
     }
 
     @Override
@@ -32,5 +31,29 @@ public class Moto extends Vehiculo implements IVehiculo{
     public String matriculaVehiculo(Vehiculo v) {
         String matricula = generarMatricula.generarMatricula();
         return matricula;
+    }
+
+    public String getTipoMoto() {
+        return tipoMoto;
+    }
+
+    public void setTipoMoto(String tipoMoto) {
+        this.tipoMoto = tipoMoto;
+    }
+
+    public boolean isEmbrague() {
+        return embrague;
+    }
+
+    public void setEmbrague(boolean embrague) {
+        this.embrague = embrague;
+    }
+
+    public boolean isManillar() {
+        return manillar;
+    }
+
+    public void setManillar(boolean manillar) {
+        this.manillar = manillar;
     }
 }
