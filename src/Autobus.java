@@ -12,6 +12,11 @@ public class Autobus extends Vehiculo implements IVehiculo{
         setRuedas(8);
         setColor("Azuul");
         setCombustible("Diesel");
+        setTipoCambio("Automatico");
+        setMotor(true);
+        setTipoDireccion("Normal");
+        setPrecio(25000);
+        
     }
 
     @Override
