@@ -33,4 +33,14 @@ public class Moto extends Vehiculo implements IVehiculo{
         String matricula = generarMatricula.generarMatricula();
         return matricula;
     }
+
+    @Override
+    public int acelerarVehiculo(int velocidad) {
+        return 0;
+    }
+
+    @Override
+    public int frenarVehiculo(int velocidad) {
+        return 0;
+    }
 }
