@@ -6,6 +6,5 @@ public class Main {
         pacopepe.fabricarVehiculo(v);
         pacopepe.montajeVehiculo(v);
 
-        
     }
 }
