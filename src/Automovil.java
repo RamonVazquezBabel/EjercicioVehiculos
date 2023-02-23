@@ -25,7 +25,7 @@ public class Automovil extends Vehiculo implements IVehiculo {
 
     @Override
     public void montajeVehiculo(Vehiculo v) {
-
+        System.out.println("Su Automóvil tipo: " + Tipo.TURISMO.toString() + "está listo para recoger");
     }
 
     @Override
