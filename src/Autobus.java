@@ -12,6 +12,11 @@ public class Autobus extends Vehiculo implements IVehiculo{
         setRuedas(8);
         setColor("Azuul");
         setCombustible("Diesel");
+        setTipoCambio("Automatico");
+        setMotor(true);
+        setTipoDireccion("Normal");
+        setPrecio(25000);
+        
     }
 
     @Override
@@ -22,11 +27,13 @@ public class Autobus extends Vehiculo implements IVehiculo{
 
     @Override
     public int acelerarVehiculo(int velocidad) {
-
+        velocidad += 5;
+        return velocidad;
     }
 
     @Override
     public int frenarVehiculo(int velocidad) {
-        return 0;
+        velocidad-=5;
+        return velocidad;
     }
 }

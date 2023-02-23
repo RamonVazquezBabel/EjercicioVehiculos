@@ -36,11 +36,13 @@ public class Moto extends Vehiculo implements IVehiculo{
 
     @Override
     public int acelerarVehiculo(int velocidad) {
-        return 0;
+        velocidad+=10;
+        return velocidad;
     }
 
     @Override
     public int frenarVehiculo(int velocidad) {
-        return 0;
+        velocidad-=10;
+        return velocidad;
     }
 }
