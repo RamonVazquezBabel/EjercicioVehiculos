@@ -9,11 +9,24 @@ public class Autobus extends Vehiculo implements IVehiculo{
 
     @Override
     public void montajeVehiculo(Vehiculo v) {
-
+        setRuedas(8);
+        setColor("Azuul");
+        setCombustible("Diesel");
     }
 
     @Override
     public String matriculaVehiculo(Vehiculo v) {
-        return null;
+
+        return generarMatricula.generarMatricula();
+    }
+
+    @Override
+    public int acelerarVehiculo(int velocidad) {
+
+    }
+
+    @Override
+    public int frenarVehiculo(int velocidad) {
+        return 0;
     }
 }
