@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Vehiculo {
     private String color;
     private double precio;
@@ -15,6 +17,10 @@ public class Vehiculo {
 
     private int numPuertas;
 
+    private int speed;
+
+    private Random r;
+
 
 
 
@@ -30,6 +36,8 @@ public class Vehiculo {
         this.matricula = matricula;
         this.ruedas = ruedas;
         this.combustible = combustible;
+        r = new Random();
+        this.speed = r.nextInt(120)+1;
     }
 
     public String getTipoDireccion() {
